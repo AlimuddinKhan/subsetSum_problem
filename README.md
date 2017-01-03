@@ -138,12 +138,12 @@ java pj2 SubSetSumSmp debug=makespan cores=4 10 123 123456 500
 
 ### Strong Scaling Performance
 Follwing graph shows the scaling performance of the parallel program.
-![Running Time Model](img/img09.png "Running Time Model")
+![Running Time Model](src/img/img09.png "Running Time Model")
 
 Above graph shows that with increase in number of cores running time decreases almost linearly.
 
 ### Other Details
-To read more about the exact approach used for sequential and parallel program you can read this comprehensive [report](SubsetSum-TeamParallel-Deliverables.pdf).
+To read more about the exact approach used for sequential and parallel program you can read this comprehensive [report](src/SubsetSum-TeamParallel-Deliverables.pdf).
 
 
 
