@@ -107,11 +107,12 @@ false
 ```
 
 ### Interacting with program : 
-You can use various command line options alongwith pj2 library. We will be using following 2;
-|command|Dexcription|
-|---|---|
-| debug=makespan| prints the time taken for execution of the program|
-|cores=n| Tells program to use n cores|
+You can use various command line options alongwith pj2 library. We will be using following 2 commands,
+
+|command|Dex]scription|
+|:----:|:----:|
+| debug\=makespan| prints the time taken for execution of the program|
+|cores\=n| Tells program to use n cores|
 e.g.
 ```
 java pj2 SubSetSumSmp debug=makespan cores=4 10 123 123456 500
@@ -119,15 +120,8 @@ java pj2 SubSetSumSmp debug=makespan cores=4 10 123 123456 500
 
 ### Strong Scaling Performance
 Follwing graoh shows the scaling performance of the parallel program.
-![alt text](subsetSum_problem/src/img/img09.png "Running Time Model")
-Abive graph shows that with increase in number of cores running time decreases accordingly.
+![Running Time Model](img/img09.png "Running Time Model")
+
+Above graph shows that with increase in number of cores running time decreases accordingly.
 
 ### Other Details
-
-
-
-
-
-
-
-
