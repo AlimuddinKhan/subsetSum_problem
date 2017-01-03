@@ -1,7 +1,7 @@
 # Subset Sum Problem
 ##### contributors: 
 Alimudin Khan (aak5031@rit.edu) and 
-Karan Jariwala 
+Karan Jariwala (kkj1811@g.rit.edu )
 ***
 ### Overview of Subset Sum Problem
 * Given a set of positive integers N and a sum S, does there exist a subset
@@ -15,38 +15,56 @@ problem has time complexity of O(2^n)
 * The subset-sum problem is a well-known non-deterministic polynomial-time complete 
 (NPcomplete) decision problem and it is also a special case of 0-1 Knapsack problem.
 
+---
+### Algorithm Used:
+
+* We have used **Two-List Algorithm** to solve the subset sum problem efficiently.
+* This is so far the best known algorithm to solve subset-sum problem.
+* It reduces time complexity to **O(2^(n/2))** from O(2^n).
+* A typical Two-list Algorithm' has 2 stages.
+ 1. Lists Generation Stage
+ 2. Search Stage
+* In our parallel program we are doing data generation stage in parallel.
+
+
 --- 
 ### Running the Program
 ##### STEP 1: Environment Setup
 * First of all you need java 1.8 (or higher) and [Java pj2 library](https://www.cs.rit.edu/~ark/pj2.shtml). Java pj2 librarary can be downloaded by 
 using this [link](https://www.cs.rit.edu/~ark/pj2.shtml#download).
 * You should have pj2 library  avialble in your classpath to ru this program.
-* you can use one of the following commands to set you class path based on your linux flavor
-			Bash shell
+* you can use one of the following commands to set you class path based on your linux flavor.
+
+For Bash shell,
 			```
 			$ export CLASSPATH=.:<path-to-pj2-jar-file>/pj2.jar
 			```
-			csh shell:
+			
+For csh shell,
 			```
 			$ setenv CLASSPATH .:<path-to-pj2-jar-file>/pj2.jar
 			```
 
 ##### Step2: Compile the source code
 You can easily compile all source code using standard command as follows;
+
 ```
 javac *.java
 ```
 
 ##### Step3: Running the program
 * To run the sequential version of the program, use the following command;
+
  ```
 Java pj2 SubsetSumSeq <N> <T> <seed> <R>
 ```
-* To run the parallel version of the program, enter the following command:
+* To run the parallel version of the program, enter the following command;
+
 ```
 Java pj2 cores=<K> SubsetSumSmp <N> <T> <seed> <R>
 ```
 where,
+
 |Parameter| Details |
 | :------: | :-----:|
 |<K>| Number of cores|
@@ -109,7 +127,7 @@ false
 ### Interacting with program : 
 You can use various command line options alongwith pj2 library. We will be using following 2 commands,
 
-|command|Dex]scription|
+|command|Description|
 |:----:|:----:|
 | debug\=makespan| prints the time taken for execution of the program|
 |cores\=n| Tells program to use n cores|
@@ -125,3 +143,16 @@ Follwing graoh shows the scaling performance of the parallel program.
 Above graph shows that with increase in number of cores running time decreases accordingly.
 
 ### Other Details
+To read more about the exact approach used for sequential and parallel program you can read this comprehensive [report](SubsetSum-TeamParallel-Deliverables.pdf).
+
+
+
+
+
+
+
+
+
+
+
+
