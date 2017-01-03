@@ -21,7 +21,7 @@ problem has time complexity of O(2^n)
 * We have used **Two-List Algorithm** to solve the subset sum problem efficiently.
 * This is so far the best known algorithm to solve subset-sum problem.
 * It reduces time complexity to **O(2^(n/2))** from O(2^n).
-* A typical Two-list Algorithm' has 2 stages.
+* A typical Two-list Algorithm has 2 stages.
  1. Lists Generation Stage
  2. Search Stage
 * In our parallel program we are doing data generation stage in parallel.
@@ -32,7 +32,7 @@ problem has time complexity of O(2^n)
 ##### STEP 1: Environment Setup
 * First of all you need java 1.8 (or higher) and [Java pj2 library](https://www.cs.rit.edu/~ark/pj2.shtml). Java pj2 librarary can be downloaded by 
 using this [link](https://www.cs.rit.edu/~ark/pj2.shtml#download).
-* You should have pj2 library  avialble in your classpath to ru this program.
+* You should have pj2 library  avialble in your classpath to run this program.
 * you can use one of the following commands to set you class path based on your linux flavor.
 
 For Bash shell,
@@ -80,7 +80,7 @@ Following are source code files and their decription,
 |SubsetSumSeq.java| Solves subset sum problem using sequential two list algorithm |
 |SubsetSumSmp.java | Solves subset sum problem using parallel two list algorithm | 
 |Functions.java | It has utility functions used by both sequential and parallel programs |
-|SubsetSumSeqDemo.java|First two files just print true or false regarding the target sum presence This program will give you detailed output like what was the generated random set, two generated subset sums etc.|
+|SubsetSumSeqDemo.java| First two files just print true or false regarding the target sum presence. This program will give you detailed output like what was the generated random set, two generated subset sums lists etc.|
 
 ----
 ### Sample Output
@@ -90,7 +90,7 @@ Running SubSetSumSeqDemo.java file;
 ```
 java pj2 SubSetSumSeqDemo 10 123 123456 500
 ```
-Above command produces followig output;
+Above command produces following output;
 ```
 Input Set: {   96   97  804  438  983  807  523  667  685  447 }
 
@@ -119,13 +119,13 @@ Running SubSetSumSmp.java file;
 ```
 java pj2 SubSetSumSmp 10 123 123456 500
 ```
-Above command produces followig output;
+Above command produces following output;
 ```
 false
 ```
 
 ### Interacting with program : 
-You can use various command line options alongwith pj2 library. We will be using following 2 commands,
+You can use various command line options along with pj2 library. We will be using following 2 commands,
 
 |command|Description|
 |:----:|:----:|
@@ -137,10 +137,10 @@ java pj2 SubSetSumSmp debug=makespan cores=4 10 123 123456 500
 ```
 
 ### Strong Scaling Performance
-Follwing graoh shows the scaling performance of the parallel program.
+Follwing graph shows the scaling performance of the parallel program.
 ![Running Time Model](img/img09.png "Running Time Model")
 
-Above graph shows that with increase in number of cores running time decreases accordingly.
+Above graph shows that with increase in number of cores running time decreases almost linearly.
 
 ### Other Details
 To read more about the exact approach used for sequential and parallel program you can read this comprehensive [report](SubsetSum-TeamParallel-Deliverables.pdf).
