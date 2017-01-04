@@ -1,6 +1,6 @@
 # Subset Sum Problem
 ##### contributors: 
-Alimudin Khan (aak5031@rit.edu) and 
+Alimuddin Khan (aak5031@rit.edu) and 
 Karan Jariwala (kkj1811@g.rit.edu )
 ***
 ### Overview of Subset Sum Problem
